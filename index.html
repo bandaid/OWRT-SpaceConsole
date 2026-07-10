@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="steel-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OWRT Space Console 0.22.19</title>
+  <meta name="description" content="OWRT Space Console is an OpenWrt writable overlay storage inspection interface with a tabbed Space Tree workflow.">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="OWRT Space Console home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+        <span class="brand-text"><strong>OWRT Space Console</strong><small>Version 0.22.19</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#purpose">Purpose</a>
+        <a href="#space-tree">Space Tree</a>
+        <a href="#interface">Interface</a>
+        <a href="#install">Install</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#docs">Docs</a>
+      </nav>
+      <label class="theme-control"><span>Style</span><select id="themeSelect" aria-label="GitHub Pages color style"><option value="steel-desk">Steel desk</option><option value="ink-high-contrast">Ink high contrast</option></select></label>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-band" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">OpenWrt overlay storage analysis</p>
+        <h1 id="hero-title">Find what is consuming writable router space.</h1>
+        <p class="lead">A tabbed Space Tree workbench for overlay pressure, top-level branches, deep directories, exact files, categories, filesystems, inventory, and cleanup references.</p>
+        <div class="actions">
+          <a class="button primary" href="downloads/OWRT_SpaceConsole_0.22.19_full_replace_app_code.zip">Download package</a>
+          <a class="button" href="downloads/OWRT_SpaceConsole_0.22.19_full_replace_app_code.sha256.txt">SHA256</a>
+          <a class="button" href="#install">Install commands</a>
+        </div>
+      </div>
+      <aside class="install-ticket" aria-label="Package facts">
+        <div class="ticket-head">Release package</div>
+        <dl>
+          <div><dt>version</dt><dd>0.22.19</dd></div>
+          <div><dt>router page</dt><dd>/www/owrt-space.html</dd></div>
+          <div><dt>cgi route</dt><dd>/www/cgi-bin/owrt-space</dd></div>
+          <div><dt>data route</dt><dd>/www/cgi-bin/owrt-space-data</dd></div>
+          <div><dt>package install</dt><dd>not used</dd></div>
+          <div><dt>service restart</dt><dd>not used</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section purpose" id="purpose" aria-labelledby="purpose-title">
+      <div class="section-copy">
+        <p class="eyebrow">Purpose</p>
+        <h2 id="purpose-title">Readable storage usage without shell guesswork.</h2>
+        <p>The router page separates summary pressure from file and directory evidence. The goal is to show what consumes writable overlay space before cleanup.</p>
+      </div>
+      <div class="step-list">
+        <article><b>01</b><div><h3>Overlay pressure</h3><p>Overview shows writable total, used, free, scanned content, generated time, and scan coverage.</p></div></article>
+        <article><b>02</b><div><h3>Space Tree path</h3><p>Start with Top level, narrow into Deep dirs, then confirm exact Files before cleanup.</p></div></article>
+        <article><b>03</b><div><h3>Safe cleanup reference</h3><p>Cleanup commands are inspection-first examples. They do not run from the web page.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="space-tree" aria-labelledby="space-tree-title">
+      <div class="section-copy wide-copy">
+        <p class="eyebrow">Space Tree workflow</p>
+        <h2 id="space-tree-title">Overview stays in Overview. Storage data stays in tables.</h2>
+        <p>Summary cards remain scoped to the Overview tab. Storage records live in sortable table tabs so the operator can compare names, full paths, sizes, shares, and pressure bars.</p>
+      </div>
+      <div class="app-preview" aria-label="Router application preview">
+        <div class="app-preview-head"><div><strong>OWRT Space Console</strong><small>Version 0.22.19</small></div><div class="preview-actions"><span>Filter current tab</span><span>Refresh live scan</span></div></div>
+        <div class="preview-tabs"><span class="active">Overview</span><span>Top level</span><span>Deep dirs</span><span>Files</span><span>Categories</span><span>Filesystems</span><span>Inventory</span><span>Cleanup</span></div>
+        <div class="preview-metrics"><div><small>Writable total</small><strong>118.46 MiB</strong></div><div><small>Writable used</small><strong>82%</strong></div><div><small>Scanned content</small><strong>85.15 MiB</strong></div></div>
+        <table class="preview-table"><thead><tr><th>Rank</th><th>Name</th><th>Full path</th><th>MiB</th><th>Share</th><th>Bar</th></tr></thead><tbody><tr><td>1</td><td>usr</td><td>/overlay/upper/usr</td><td>53.53</td><td>62.8%</td><td><i style="--w:63%"></i></td></tr><tr><td>2</td><td>tmp</td><td>/overlay/upper/tmp</td><td>20.79</td><td>24.4%</td><td><i style="--w:24%"></i></td></tr><tr><td>3</td><td>www</td><td>/overlay/upper/www</td><td>6.69</td><td>7.9%</td><td><i style="--w:8%"></i></td></tr></tbody></table>
+      </div>
+    </section>
+
+    <section class="section install" id="install" aria-labelledby="install-title">
+      <div class="section-copy"><p class="eyebrow">Install</p><h2 id="install-title">Install the release package on the router.</h2><p>The package is designed for OpenWrt /www deployment. It does not install packages, restart services, or create router archives.</p></div>
+      <div class="command-stack"><article><h3>Install</h3><pre><code>sh install_owrt_space_console_0_22_19_FULL_REPLACE_APP.sh</code></pre></article><article><h3>Open after install</h3><pre><code>https://192.168.50.1/owrt-space.html</code></pre></article><article><h3>Live refresh route</h3><pre><code>https://192.168.50.1/cgi-bin/owrt-space?refresh=1</code></pre></article></div>
+    </section>
+
+    <section class="section screenshots" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="section-copy wide-copy"><p class="eyebrow">Screenshots</p><h2 id="screenshots-title">Verified screenshots from the current package.</h2><p>Screenshot filenames are theme-specific. Steel desk images are not used for Ink high contrast, and Ink high contrast images are not used for Steel desk.</p></div>
+      <div class="screenshot-grid">
+        <figure><img src="assets/screenshots/verified-github-pages-steel-desk-home.png" alt="GitHub Pages home in Steel desk theme"><figcaption>GitHub Pages, Steel desk</figcaption></figure>
+        <figure><img src="assets/screenshots/verified-github-pages-ink-high-contrast-home.png" alt="GitHub Pages home in Ink high contrast theme"><figcaption>GitHub Pages, Ink high contrast</figcaption></figure>
+        <figure><img src="assets/screenshots/verified-router-steel-desk-overview.png" alt="Router application Overview in Steel desk theme"><figcaption>Router app, Steel desk Overview</figcaption></figure>
+        <figure><img src="assets/screenshots/verified-router-ink-high-contrast-overview.png" alt="Router application Overview in Ink high contrast theme"><figcaption>Router app, Ink high contrast Overview</figcaption></figure>
+        <figure><img src="assets/screenshots/verified-router-steel-desk-filesystems.png" alt="Router application Filesystems in Steel desk theme"><figcaption>Router app, Steel desk Filesystems</figcaption></figure>
+        <figure><img src="assets/screenshots/verified-router-ink-high-contrast-filesystems.png" alt="Router application Filesystems in Ink high contrast theme"><figcaption>Router app, Ink high contrast Filesystems</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section docs" id="docs" aria-labelledby="docs-title">
+      <div class="section-copy"><p class="eyebrow">Docs</p><h2 id="docs-title">Repository documentation.</h2><p>Documentation files are included for install behavior, storage workflow, theme rules, license, and release checks.</p></div>
+      <div class="doc-grid"><a href="README.md">README</a><a href="LICENSE">Apache 2.0 License</a><a href="docs/INSTALL.md">Install guide</a><a href="docs/SPACE_TREE_USAGE_GUIDE.md">Space Tree guide</a><a href="docs/THEMES.md">Theme guide</a><a href="docs/SCREENSHOTS.md">Screenshot notes</a><a href="docs/SCREENSHOT_SHA256SUMS.txt">Screenshot hashes</a><a href="docs/SHA256SUMS.txt">SHA256 sums</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><strong>OWRT Space Console</strong><span>Version 0.22.19</span></div><div><span>Apache-2.0</span><a href="#top">Top</a></div></footer>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

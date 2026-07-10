@@ -1,0 +1,6 @@
+1644dbb3eb342c15de003df3a021a27200c5ca608edb62020dad34d42f851796  assets/screenshots/verified-github-pages-ink-high-contrast-home.png
+fa7df03f5f80630f81859bb3839d645b88d4378bd5ffff178e0902bd8d2df0cb  assets/screenshots/verified-github-pages-steel-desk-home.png
+e7c181c5b5c9efc6e5fb5f341a040936934d3ee03811e8f4c5f630615207ab8a  assets/screenshots/verified-router-ink-high-contrast-filesystems.png
+f55cb78133711d7bfbc46745f3d22ae7bbd7869bac49023f61b07fd08a8f6a81  assets/screenshots/verified-router-ink-high-contrast-overview.png
+733b5c949e62335cd442fb414afd738a6300835a68c7679d81be29a06bd423d8  assets/screenshots/verified-router-steel-desk-filesystems.png
+e1f377cc2085e64963428d0d7ffbaff430f760025539a986c8c18c529dbb94f6  assets/screenshots/verified-router-steel-desk-overview.png
