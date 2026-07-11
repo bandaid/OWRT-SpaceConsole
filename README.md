@@ -11,8 +11,6 @@ OWRT Space Console is an OpenWrt writable overlay storage inspection interface w
 | Router page | `/www/owrt-space.html` |
 | CGI route | `/www/cgi-bin/owrt-space` |
 | Data route | `/www/cgi-bin/owrt-space-data` |
-| Package install | not used |
-| Service restart | not used |
 
 ## Screenshots
 
@@ -55,13 +53,13 @@ sh install_owrt_space_console_0_22_19_FULL_REPLACE_APP.sh
 Open after install:
 
 ```text
-https://192.168.50.1/owrt-space.html
+https://openwrt-ip-address/owrt-space.html
 ```
 
 Live refresh route:
 
 ```text
-https://192.168.50.1/cgi-bin/owrt-space?refresh=1
+https://openwrt-ip-address/cgi-bin/owrt-space?refresh=1
 ```
 
 ## GitHub Pages themes
