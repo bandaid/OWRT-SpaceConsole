@@ -14,7 +14,7 @@ OWRT Space Console is an OpenWrt writable overlay storage inspection interface w
 
 ## Screenshots
 
-These screenshots are embedded in the README with image markup. They are generated from this package. The Ink high contrast images use separate Ink high contrast files. The Steel desk images use separate Steel desk files.
+These screenshots are embedded in the README with image markup.
 
 ### GitHub Pages, Steel desk
 
@@ -42,7 +42,7 @@ These screenshots are embedded in the README with image markup. They are generat
 
 ## Screenshot verification
 
-`docs/SCREENSHOT_SHA256SUMS.txt` lists each screenshot hash. `docs/SCREENSHOT_PAIR_AUDIT.txt` records that the Steel desk and Ink high contrast screenshot pairs are not the same image.
+`docs/SCREENSHOT_SHA256SUMS.txt` lists each screenshot hash. `docs/SCREENSHOT_PAIR_AUDIT.txt` records the Steel desk and Ink high contrast screenshot pairs.
 
 ## Install
 
