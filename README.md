@@ -14,8 +14,6 @@ OWRT Space Console is an OpenWrt writable overlay storage inspection interface w
 
 ## Screenshots
 
-These screenshots are embedded in the README with image markup.
-
 ### GitHub Pages, Steel desk
 
 <img src="assets/screenshots/verified-github-pages-steel-desk-home.png" alt="GitHub Pages home in Steel desk theme" width="920">
